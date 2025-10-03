@@ -1,16 +1,77 @@
-# React + Vite
+# 🖥️ Mi Servidor Casero - Documentación
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page simple para documentar mi proyecto de servidor casero usando un portátil Acer viejo.
 
-Currently, two official plugins are available:
+## 📖 Sobre el Proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Convertí un portátil Acer Aspire A3 que ya no usaba en un servidor personal para aprender sobre deployment, Docker, y administración de sistemas. Esta página documenta el proyecto para mi portafolio.
 
-## React Compiler
+### Hardware
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Portátil:** Acer Aspire A3 Series (azul)
+- **Almacenamiento:** HDD
+- **Estado:** Reutilizado como servidor
 
-## Expanding the ESLint configuration
+### Software
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **CasaOS** - Para gestionar el servidor fácilmente
+- **Docker** - Para desplegar aplicaciones
+- **Cloudflare** - Para acceso público seguro
+- **SSH** - Para acceso remoto
+
+
+Abre `https://andrewlamaquina.my` en tu navegador.
+
+
+
+
+## 📁 Estructura
+
+```
+proyecto/
+├── src/
+│   ├── components/      # Componentes de cada sección
+│   ├── styles/          # Estilos con Tailwind
+│   ├── App.jsx          # Página principal
+│   └── main.jsx         # Entry point
+├── public/              # Archivos estáticos
+├── Dockerfile           # Para Docker
+├── docker-compose.yml   # Para deployment
+└── package.json         # Dependencias
+```
+
+## 🎨 Personalizar
+
+Edita los componentes en `src/components/` para cambiar:
+- Especificaciones del hardware
+- Tecnologías que uses
+- Descripción de tus proyectos
+
+## 🔧 Tecnologías Usadas
+
+**Frontend:**
+- React + Vite
+- Tailwind CSS
+- Lucide Icons
+
+**Servidor:**
+- CasaOS
+- Docker
+- Cloudflare Tunnel
+- Nginx
+
+## ✨ Características
+
+- ✅ Diseño responsive
+- ✅ Tema oscuro con acentos azules
+- ✅ Listo para Docker
+- ✅ Simple y fácil de modificar
+
+## 📝 Notas
+
+- Es una página estática, no tiene backend
+- El modelo 3D es opcional (placeholder por ahora)
+
+---
+
+**Proyecto de aprendizaje** • Reutilizando hardware viejo 🖥️ → 🚀
