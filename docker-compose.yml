@@ -1,0 +1,23 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8001:8000"
+    restart: always
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - apparmor=unconfined
+    environment:
+      - HOST_TARGET=host.docker.internal
+    volumes:
+      - /proc:/proc:ro
+
+  frontend:
+    build: .
+    ports:
+      - "8080:80"
+    restart: always
+    depends_on:
+      - backend
